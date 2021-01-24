@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<style >
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  height: 100%;
+  height: 100%;
+     background-image: linear-gradient(
+        115deg,
+        rgba(88, 58, 158, 0.5),
+        rgba(36, 136, 06, 0.5)
+      ),
+   url(https://wallpapercave.com/wp/wp3589117.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+
+}
+header {
+  font-size: 20px;
+  color: white;
+}
+#survey-form {
+  font-size: 20px;
+width:20%;
+margin:auto;
+border-radius: 1rem;
+background-color: hsl(45,30%,70%);opacity: 0.7;
+ padding: 40px 50px 50px 50px;
+ text-align: left;
+}
+input[type=text],select {
+  width:100%;
+  padding:6px 10px;
+  margin:3px 0;
+  display:inline-block;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+input[type=email],input[type=age] {
+  width:100%;
+  padding:6px 10px;
+  margin:3px 0;
+  display:inline-block;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+textarea {
+  height:100px;width: 100%;resize:vertical;
+}
+button {
+  border: 1px solid #333;
+  font-size: 20px;
+  width: 100%;
+  background-color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+button:hover {
+    background-color: grey;
+  }
+</style>
+
+
+<header class="header">
+
+<h1 id="title" >Monster Hunter World Survey Form</h1>
+
+<h3 id="description">Help us hunting better!</h3>
+
+</header>
+
+<form id="survey-form">
+   <div class="text-group">
+    <label id="name-label" for="name">* Name</label>
+      <input autofocus
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+            />
+            <br>
+    <label id="email-label" for="email">* Email</label>
+              <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your Email"
+                    required
+                    />
+                    <br>
+    <label id="age-label" for="age"> Age</label><br>
+                <input
+                  type="age"
+                  name="age"
+                  min="1"
+                  max="100"
+                  id="age"
+                  class="form-control"
+                  placeholder="Enter your age"
+                  style="width:100%;"
+                  />
+                </div>
+                  <br>
+                  <label id="favweapon-label" for="favweapon">* what is your favorite weapon</label>
+                    <select
+                                id="favweapon"
+                                name="favweapon"
+                                class="dropdown"                               required
+                                />
+          <option value="Great Sword">Great Sword</option>
+          <option value="Long Sword">Long Sword</option>
+          <option value="Sword and Shield">Sword and Shield</option>
+          <option value="Dual Blades">Dual Blades</option>
+          <option value="Hammer">Hammer</option>
+          <option value="Hunting Horn">Hunting Horn</option>
+          <option value="Lance">Lance</option>
+          <option value="Gunlance">Gunlance</option>
+          <option value="Switch Axe">Switch Axe</option>
+          <option value="Insect Glaive">Insect Glaive</option>
+          <option value="Charge Blade">Charge Blade</option>
+          <option value="Tonfa">Tonfa</option>
+          <option value="Magnet Spike">Magnet Spike</option>
+          <option value="Accel Axe">Accel Axe</option>
+          <option value="Light Bowgun">Light Bowgun</option>
+          <option value="Medium Bowgun">Medium Bowgun</option>
+          <option value="Bow">Bow</option>
+          <option value="All" selected>I love them all!</option>
+        </select>
+<br><br>
+        <label for="rating">*Will you recommend this game to others?</label><br><br>
+            <input
+            id="rating"
+            name="radion-buttons"
+            value="1"
+            type="radio"
+            class="rating"
+            required>
+            <label>Yeah! For sure!</label><br>
+            <input
+            id="rating"
+            name="radion-buttons"
+            value="2"
+            type="radio"
+            class="rating"
+            required>
+            <label>Probably</label><br>
+            <input
+            id="rating"
+            name="radion-buttons"
+            value="3"
+            type="radio"
+            class="Rating"
+            required>
+            <label>Not really</label><br>
+  <br><br>
+  <label for="weakness"> Things you hate about the game<br>(Check all that apply)</label><br><br>
+
+        <input
+        id="weakness1"
+        name="hate"
+        value="1"
+        type="checkbox"
+        class="hate">
+        <label for=""weakness1">Monster running away</label><br>
+
+          <input
+          id="weakness2"
+          name="hate"
+          value="2"
+          type="checkbox"
+          class="hate">
+          <label for=""weakness2">Taking too long to drink potions</label><br>
+
+            <input
+            id="weakness3"
+            name="hate"
+            value="3"
+            type="checkbox"
+            class="hate">
+            <label for=""weakness3">Quests come with limited time</label><br>
+
+              <input
+              id="weakness4"
+              name="hate"
+              value="4"
+              type="checkbox"
+              class="hate">
+                <label for=""weakness4">Way too challenging</label><br>
+
+              <label>
+                <input
+                id="weakness5"
+                name="hate"
+                value="5"
+                type="checkbox"
+                class="hate">
+                  <label for=""weakness5">Endless gem/ruby farming</label><br>
+<br>
+  <label for="comments">Anything else you want to share with us?
+  </label><br>
+  <textarea
+              id="comments"
+              class="input-field"
+              name="comments"
+              placeholder="Anything you like to share!">
+</textarea><br>
+</form>
+<button id="submit" type="submit">submit</button>
+</form>
+
+  </html>
